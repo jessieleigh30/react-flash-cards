@@ -1,16 +1,20 @@
 import React from "react";
 import { Card, Button } from 'semantic-ui-react';
-const Cards = ({ varCards, }) => (
+const Cards = ({ id, varCards, remove }) => (
    // Semantic Card 
    <Card.Group>
 
       {
          varCards.map(v => (
-            <Card key={v.id}>
+            <Card 
+               key={v.id}
+               {...v} 
+               remove={remove}
+            >
                <Card.Content>
                   <Card.Header> Question </Card.Header>
                   <Card.Description>
-                     {v.frontQuestion}
+                     {v.frontquestion}
                   </Card.Description>
 
                </Card.Content>
@@ -20,7 +24,8 @@ const Cards = ({ varCards, }) => (
                      <Button basic color='green'>
                         Edit
                    </Button>
-                     <Button basic color='red'>
+                     {console.log(v.id)}
+                     <Button basic color='red' onClick={() => remove(id)}>
                         Delete
                   </Button>
                   </div>
