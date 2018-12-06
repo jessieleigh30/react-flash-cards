@@ -18,8 +18,7 @@ class App extends Component {
       <Container>
         <Header as= "h1"> React Flash Cards</Header>
         <Card.Group> 
-          <Cards varCards={this.state.cards}>
-          </Cards>
+          <Cards varCards={this.state.cards}/>
         </Card.Group>
       </Container>
 
