@@ -11,7 +11,7 @@ const Cards = ({ varCards, }) => (
          ))
          }
    </Card.Group>
-)
+);
 export default Cards;
 
 

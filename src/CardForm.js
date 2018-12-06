@@ -4,9 +4,6 @@ import { Form, } from "semantic-ui-react";
 class CardForm extends React.Component {
   state = { frontQuestion: "", backAnswer: "" };
 
-  handleSubmit = (e) => {
-    e.preventDefault();
-  }
 
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value, });
@@ -20,7 +17,7 @@ class CardForm extends React.Component {
 
   render() {
     return (
-      <Form>
+        <Form onSubmit={this.handleSubmit}>
         <Form.Group widths="equal">
           <Form.Input
             fluid
