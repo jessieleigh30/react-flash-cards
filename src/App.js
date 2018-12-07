@@ -10,9 +10,9 @@ import { Container, Header, Card, Button, CardDescription } from "semantic-ui-re
 class App extends Component {
   state = {
     cards: [
-      {id: 1, frontQuestion: "What is Jessica's dog's name?", backAnswer: "Baymax",},
-      {id: 2, frontQuestion: "What is Jessica's cat's name?", backAnswer: "Cosmo",},
-      {id: 3, frontQuestion: "How old is Baymax", backAnswer: "3",},
+      {id: 1, frontQuestion: "Who painted the Sistine chapel ceiling?", backAnswer: "Michelangelo",},
+      {id: 2, frontQuestion: "Picasso painting that was a reaction to the bombing of a town in WWII", backAnswer: "Guernica",},
+      {id: 3, frontQuestion: "What art movement was Matisse associated with?", backAnswer: "Fauvism",},
     ],
   };
 
