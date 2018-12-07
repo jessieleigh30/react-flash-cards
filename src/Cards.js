@@ -14,7 +14,7 @@ const Cards = ({ id, varCards, remove }) => (
                <Card.Content>
                   <Card.Header> Question </Card.Header>
                   <Card.Description>
-                     {v.frontquestion}
+                     {v.frontQuestion}
                   </Card.Description>
 
                </Card.Content>

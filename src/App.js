@@ -9,9 +9,9 @@ import { Container, Header, Card, Button, CardDescription } from "semantic-ui-re
 class App extends Component {
   state = {
     cards: [
-      {id: 1, frontquestion: "What is Jessica's dog's name?", backanswer: "Baymax",},
-      {id: 2, frontquestion: "What is Jessica's cat's name?", backanswer: "Cosmo",},
-      {id: 3, frontquestion: "How old is Baymax", backanswer: "3",},
+      {id: 1, frontQuestion: "What is Jessica's dog's name?", backAnswer: "Baymax",},
+      {id: 2, frontQuestion: "What is Jessica's cat's name?", backAnswer: "Cosmo",},
+      {id: 3, frontQuestion: "How old is Baymax", backAnswer: "3",},
     ],
   };
 
